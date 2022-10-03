@@ -1,4 +1,4 @@
-import StatisticsItem from './StatisticsItem';
+import StatisticsItem from './StatisticsItems/StatisticsItem';
 import { PropTypes } from 'prop-types';
 export default function StatisticsList({ items }) {
   return (

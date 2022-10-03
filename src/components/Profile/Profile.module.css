@@ -1,0 +1,86 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 260px;
+  height: 330px;
+  margin: 0 auto;
+  margin-top: 15px;
+  background: #ffffff;
+  box-shadow: 0px 1px 4px rgba(126, 147, 255, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.description {
+  padding-top: 25px;
+}
+.avatar {
+  border-radius: 50%;
+  margin-bottom: 27px;
+}
+.name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  margin-bottom: 9px;
+
+  text-align: center;
+  letter-spacing: 0.01em;
+
+  color: #1f3349;
+}
+.tag,
+.location {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  color: #7f8e9d;
+  margin-bottom: 9px;
+}
+.location {
+  margin-bottom: 0;
+}
+.stats {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0;
+  background: #ecf1f3;
+  border-top: 1px solid #7f8e9d;
+}
+.stats li {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+.stats li:not(:first-child) {
+  border-left: 1px solid #7f8e9d;
+}
+.label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  color: #7f8e9d;
+  margin-bottom: 6px;
+  margin-top: 19px;
+}
+.quantity {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #1f3349;
+  margin-bottom: 19px;
+}

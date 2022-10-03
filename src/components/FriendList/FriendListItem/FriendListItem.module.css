@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 260px;
+  height: 72px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+.status {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.avatar {
+  width: 56px;
+  height: 56px;
+  margin-left: 15px;
+  border-radius: 50%;
+}
+.name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+
+  letter-spacing: 0.01em;
+
+  color: #1f3349;
+  margin-left: 8px;
+}
