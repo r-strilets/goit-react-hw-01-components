@@ -1,11 +1,16 @@
 import user from './data/user.json';
 import data from './data/data.json';
+import friends from './data/friends';
+import transactions from './data/transactions';
 import { Profile } from './components/Profile/Profile';
-import Section from 'components/Profile/Section/Section';
+import Section from 'components/Section/Section';
 import StatisticsList from 'components/Statistics/StatisticsList';
+import { FriendList } from 'components/FriendList/FriendList';
+import TransactionHistory from 'components/TransactionHistory/TransactionHistory';
+
 export default function App() {
   return (
-    <div>
+    <>
       <Profile
         userAvatar={user.avatar}
         userName={user.username}
@@ -13,9 +18,14 @@ export default function App() {
         userLocation={user.location}
         userStats={user.stats}
       />
-      <Section title="Заголовок">
+
+      <Section title="Upload stats">
         <StatisticsList items={data} />
       </Section>
-    </div>
+
+      <FriendList friends={friends} />
+
+      <TransactionHistory transactions={transactions} />
+    </>
   );
 }
