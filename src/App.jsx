@@ -13,7 +13,7 @@ export default function App() {
         userLocation={user.location}
         userStats={user.stats}
       />
-      <Section title="sdasdasd">
+      <Section title="Заголовок">
         <StatisticsList items={data} />
       </Section>
     </div>
