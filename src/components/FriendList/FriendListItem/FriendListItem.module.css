@@ -12,7 +12,17 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
+  margin-left: 12px;
 }
+.online {
+  composes: status;
+  background-color: green;
+}
+.offline {
+  composes: status;
+  background-color: red;
+}
+
 .avatar {
   width: 56px;
   height: 56px;

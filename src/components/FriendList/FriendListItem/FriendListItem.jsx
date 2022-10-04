@@ -3,11 +3,7 @@ import PropType from 'prop-types';
 export function FriendListItem({ status, avatarUrl, name }) {
   return (
     <li className={css.item}>
-      <span className={css.status}>
-        {/* {status
-          ? (status.style = 'backgroundColor:green')
-          : (status.style = 'backgroundColor:red')} */}
-      </span>
+      <span className={status ? css.online : css.offline}></span>
       <img
         className={css.avatar}
         src={avatarUrl}
